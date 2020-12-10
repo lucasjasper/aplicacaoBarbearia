@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.aplicacaobarbearia">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="BarberShop"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AplicacaoBarbearia">
+        <activity android:name=".EditaCorte"></activity>
+        <activity
+            android:name=".ListaCorte"
+            android:label="Cortes"
+            android:theme="@style/Theme.AplicacaoBarbearia.NoActionBar" />
+        <activity android:name=".EditaCliente"></activity>
+        <activity
+            android:name=".ListaCliente"
+            android:label="Clientes"
+            android:theme="@style/Theme.AplicacaoBarbearia.NoActionBar" />
+        <activity android:name=".EditaServico"></activity>
+        <activity
+            android:name=".ListaServico"
+            android:label="Serviços"
+            android:theme="@style/Theme.AplicacaoBarbearia.NoActionBar" />
+        <activity android:name=".MenuPrincipal"/>
+        <activity
+            android:name=".CadastraUsuario"
+            android:label="Cadastro de Usuário"/>
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
